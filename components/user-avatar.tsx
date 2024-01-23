@@ -2,7 +2,7 @@ import React from "react";
 import { useUser } from "@clerk/nextjs";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
-const userAvatar = () => {
+const UserAvatar = () => {
   const { user } = useUser();
   return (
     <Avatar className="h-8 w-8">
@@ -15,4 +15,4 @@ const userAvatar = () => {
   );
 };
 
-export default userAvatar;
+export default UserAvatar;
